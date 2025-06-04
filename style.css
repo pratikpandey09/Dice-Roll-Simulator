@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0d0d0d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #00bcd4;
+  padding: 20px;
+  width: 90vw;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.dice {
+  position: relative;
+  width: 5vw;
+  height: 5vw;
+  margin: 20px auto;
+}
+
+.dice img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  object-fit: contain;
+  transform-origin: center center;
+}
+
+#mainDice {
+  display: block;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+ background: linear-gradient(to right, #263238, #054c6c);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #263238;
+}
+
+@media (max-width:600px) {
+
+  .container {
+    width: 80%;
+  }
+  h1{
+    font-size: 2rem;
+  }
+  p{
+    font-size: 1.1rem;
+  }
+  .dice{
+    width: 20vw;
+    height: 20vw;
+  }
+}
